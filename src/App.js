@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-          'http://localhost:8080/api/posts',
+          'http://posts-api.default:8080/api/posts',
       );
 
       setPosts(result.data);

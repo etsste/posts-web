@@ -29,7 +29,7 @@ const AddPostForm = props => {
 
         console.log(postData);
 
-        axios.post('http://localhost:8080/api/posts', postData)
+        axios.post('http://posts-api.default:8080/api/posts', postData)
         .then(response => response.data.error)
         .catch(error => console.log(error));
         console.log(post);
